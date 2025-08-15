@@ -57,7 +57,7 @@ def send_to_api(rate: float) -> None:
 def main():
     while True:
         try:
-            rate = get_rate(url=BASE_URL)
+            rate = round(get_rate(url=BASE_URL), 2)
             send_to_api(rate=rate)
             time.sleep(24 * 60 * 60)
         except Exception as e:
