@@ -62,6 +62,7 @@ def main():
             time.sleep(24 * 60 * 60)
         except Exception as e:
             print(e)
+            time.sleep(2 * 60 * 60)
 
 
 if __name__ == "__main__":
